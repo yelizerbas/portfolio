@@ -1,0 +1,336 @@
+/********************************************
+*********************************************
+********************RESET********************
+*********************************************
+********************************************/
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    outline-color: var(--focus);
+    overflow-x: hidden;
+}
+
+/********************************************
+*********************************************
+*******************FONT**********************
+*********************************************
+********************************************/
+
+:root{
+    --white: #ffffff;
+    --lightblue:#D8E3E5;
+    --blue:#B6CCD4;
+    --darkblue:#8CA3AC;
+    --cream:#EDEDED;
+    --lightgreen:#B2C2B3;
+    --darkgreen:#90A391;
+    --lightbrown:#D5AC98;
+    --darkbrown:#86614F;
+    --purple:#9992BE;
+}
+
+/********************************************
+*********************************************
+*******************FONT**********************
+*********************************************
+********************************************/
+
+@font-face{
+    font-family: 'lemonmilk-bold';
+    src: url('..assets/LEMONMILK-Bold.oft') format(oft);
+}
+
+@font-face{
+    font-family: 'lemonmilk-regular';
+    src: url('..assets/LEMONMILK-Regular.oft') format(oft);
+}
+
+@font-face{
+    font-family: 'lemonmilk-light';
+    src: url('..assets/LEMONMILK-Light.oft') format(oft);
+}
+
+/********************************************
+*********************************************
+*******************TEXT**********************
+*********************************************
+********************************************/
+
+h1{
+    color: var(--white);
+    font-family: 'lemonmilk-bold';
+}
+
+h2{
+    color: var(--white);
+    font-family: 'lemonmilk-bold';
+    font-size: 2vw;
+}
+
+p{
+    color: var(--white);
+}
+
+
+/********************************************
+*********************************************
+*******************HEADER********************
+*********************************************
+********************************************/
+
+header{
+    background-color: var(--blue);
+    padding-top: 2%;
+    padding-bottom: 5%; 
+}
+
+a{
+    font-family: 'lemonmilk-bold';
+    font-size: 1.7vw;
+    color: var(--white);
+    text-decoration: none;
+    margin-left: 3%;
+}
+
+header section {
+    position: relative;
+    margin-top: 5%;
+}
+
+header h1 {
+    font-size: 5vw;
+    position: relative;
+    left: 40%;
+}
+
+header p{
+    font-family: 'lemonmilk-light';
+    font-size: 5vw;
+    position: relative;
+    left: 40%;
+}
+
+section#profielfoto{
+    position: relative;
+    margin-top: -30%;
+}
+
+img#foto{
+    border-radius: 50%;
+    width: 30%; 
+    height: auto;
+    margin-top: 5%;
+    margin-left: 3%;
+}
+
+img#blue-lines{
+    width: 30%; 
+    height: auto;
+    margin-top: 5%;
+    margin-left: -30%;
+    position: absolute;
+}
+
+img#cream-lines{
+    width: 32%; 
+    height: auto;
+    margin-top: 5%;
+    margin-left: -31%;
+    position: absolute;
+}
+
+img#blue-home{
+    width: 15%; 
+    height: auto;
+    position: absolute;
+    top: -13%;
+    right: -5%;
+}
+
+
+/********************************************
+*********************************************
+*****************HOMEPAGE********************
+*********************************************
+********************************************/
+
+
+
+div#overmij-home{
+	background-color: var(--lightgreen);
+    width: 65%;
+    padding: 25%;
+    border-radius: 2%;
+    margin-top: 8%;
+
+}
+
+h2.home{
+    font-size: 3vw;
+    position: absolute;
+    margin-top: -45%;
+    margin-left: 25%;
+}
+
+p.home{
+    font-family: 'lemonmilk-regular';
+    font-size: 2vw;
+    position: absolute;
+    margin-top: -40%;
+    margin-left: 3%;
+    width: 53%;
+}
+
+img#brown-home{
+    top: 80%;
+    right: -20%;
+    width: 60%;
+    height: auto;
+    position: absolute;
+}
+
+img#dots-home{
+    top: 54%;
+    right: -7%;
+    width: 32%;
+    height: auto;
+    position: absolute;
+}
+
+img#cream-home{
+    margin-top: -4%;
+    margin-left: 47%;
+    width: 25%;
+    height: auto;
+    position: absolute;
+}
+
+a#cta-home{
+    font-family: 'lemonmilk-bold';
+    font-size: 2.2vw;
+    color: var(--white);
+    background-color: var(--darkgreen);
+    padding: 1.5% 1.5% 1.5% 1.5%;
+    border-radius: 2%;
+    position: absolute;
+    margin-top: -11%;
+    margin-left: 43%;
+}
+
+img#green-home{
+    margin-top: -16%;
+    margin-left: -8%;
+    width: 20%;
+    height: auto;
+    position: absolute;
+    }
+
+
+/********************************************
+*********************************************
+*******************FOOTER********************
+*********************************************
+********************************************/
+/* footer{
+    position: absolute;
+    left: 0;
+    bottom: 0; 
+} */
+
+/* div#footer1{
+    background-color: var(--blue);
+    border-radius: 50%;
+    width: 25%;
+    height: auto;
+    padding: 25%;
+    z-index: -2;
+    position: relative;
+}
+
+div#footer2{
+    background-color: var(--lightblue);
+    border-radius: 50%;
+    width: 10%;
+    height: auto;
+    padding: 10%;
+    z-index: -1;
+    position: relative;
+}
+
+div#footer3{
+    background-color: var(--cream);
+    width: 15%;
+    height: auto;
+    padding: 15%;
+    border-radius: 2%;
+    position: relative;
+    left: 20%;
+}
+
+div#footer4{
+    background-color: var(--lightbrown);
+    width: 40%;
+    padding: 12%;
+    border-radius: 2%;
+    position: relative;
+    left: 60%;
+} */
+
+
+img#footah{
+    overflow: hidden;
+    margin-top: 6%;
+    width: 100%;
+    height: auto;
+}
+
+/********************************************
+*********************************************
+*****************ABOUT ME********************
+*********************************************
+********************************************/
+header#overmij{
+    background-color: var(--blue);
+    padding-top: 2%;
+    padding-bottom: 18.5%; 
+}
+
+div#overmij{
+	background-color: var(--purple);
+    width: 65%;
+    padding: 25%;
+    border-radius: 2%;
+    margin-top: 8%;
+
+}
+
+div#overmij2{
+	background-color: var(--blue);
+    width: 65%;
+    padding: 25%;
+    border-radius: 2%;
+    margin-top: 8%;
+
+}
+
+h2.overmij{
+    font-size: 3vw;
+    position: absolute;
+    margin-top: -45%;
+    margin-left: 18%;
+}
+
+
+span#paars{
+    color: #634B6F;
+}
+
+span#blauw{
+    color: var(--darkblue);
+}
