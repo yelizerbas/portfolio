@@ -24,6 +24,7 @@
 
 :root{
     --white: #ffffff;
+    --black: #000000;
     --lightblue:#D8E3E5;
     --blue:#B6CCD4;
     --darkblue:#8CA3AC;
@@ -64,18 +65,30 @@
 
 h1{
     color: var(--white);
-    font-family: 'lemonmilk-bold';
+    font-family: 'lemonmilk-bold', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 h2{
     color: var(--white);
-    font-family: 'lemonmilk-bold';
+    font-family: 'lemonmilk-bold', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 2vw;
+}
+
+h3{
+    color: var(--white);
+    font-family: 'lemonmilk-bold', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.7vw;
 }
 
 p{
     color: var(--white);
+    font-family: 'lemonmilk-regular',  Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
 }
+
+
+
+
 
 
 /********************************************
@@ -91,7 +104,7 @@ header{
 }
 
 a{
-    font-family: 'lemonmilk-bold';
+    font-family: 'lemonmilk-bold', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 1.7vw;
     color: var(--white);
     text-decoration: none;
@@ -110,7 +123,7 @@ header h1 {
 }
 
 header p{
-    font-family: 'lemonmilk-light';
+    font-family: 'lemonmilk-light'  Arial, Helvetica, sans-serif;
     font-size: 5vw;
     position: relative;
     left: 40%;
@@ -125,11 +138,35 @@ img#foto{
     border-radius: 50%;
     width: 30%; 
     height: auto;
-    margin-top: 5%;
+    margin-top: -25%;
     margin-left: 3%;
 }
 
 img#blue-lines{
+    width: 30%; 
+    height: auto;
+    margin-top: -25%;
+    margin-left: -30%;
+    position: absolute;
+}
+
+img#cream-lines{
+    width: 32%; 
+    height: auto;
+    margin-top: -25%;
+    margin-left: -31%;
+    position: absolute;
+}
+
+img#foto2{
+    border-radius: 50%;
+    width: 30%; 
+    height: auto;
+    margin-top: 5%;
+    margin-left: 3%;
+}
+
+img#blue-lines2{
     width: 30%; 
     height: auto;
     margin-top: 5%;
@@ -137,7 +174,7 @@ img#blue-lines{
     position: absolute;
 }
 
-img#cream-lines{
+img#cream-lines2{
     width: 32%; 
     height: auto;
     margin-top: 5%;
@@ -149,9 +186,75 @@ img#blue-home{
     width: 15%; 
     height: auto;
     position: absolute;
-    top: -13%;
-    right: -5%;
+    top: -1em;
+    right: -.5em;
 }
+
+
+
+
+/*****************************
+************HEADER 2**********
+******************************/
+header.rest{
+    background-color: transparent;
+}
+
+a.rest{
+    color: black;
+}
+
+img#mijn-werk-lijntjes{
+    width: 30%;
+    height: auto;
+    position: absolute;
+    top: -8vw;
+    left: -8vw;
+    z-index: -1;
+}
+
+h1.header-h1{
+    position: absolute;
+    margin-top: 2em;
+    margin-left: .5em;
+    z-index: +1;
+}
+
+div.header-circel{
+    background-color: var(--darkblue);
+    width: 25%;
+    padding: 25%;
+    border-radius: 50%;
+
+    position: absolute;
+    margin-top: -20%;
+    right: 10%;
+    z-index: -2;
+}
+
+div.header-label{
+    background-color: var(--blue);
+    width: 45%;
+    padding: 7%;
+    border-radius: 2%;
+    margin-top: 8%;
+
+    position: absolute;
+    margin-top: 7%;
+    right: 20%;
+    z-index: -1;
+}
+
+div#illustratie-circel{
+    background-color: var(--blue);
+}
+
+div#illustratie-label{
+    background-color: var(--darkblue);
+}
+
+
+
 
 
 /********************************************
@@ -159,9 +262,6 @@ img#blue-home{
 *****************HOMEPAGE********************
 *********************************************
 ********************************************/
-
-
-
 div#overmij-home{
 	background-color: var(--lightgreen);
     width: 65%;
@@ -169,6 +269,17 @@ div#overmij-home{
     border-radius: 2%;
     margin-top: 8%;
 
+}
+
+
+div#mijnwerk-home{
+	background-color: var(--darkbrown);
+    width: 65%;
+    padding: 25%;
+    border-radius: 2%;
+    margin-top: -3%;
+    position: absolute;
+    right: 0;
 }
 
 h2.home{
@@ -179,12 +290,18 @@ h2.home{
 }
 
 p.home{
-    font-family: 'lemonmilk-regular';
+    font-family: 'lemonmilk-regular'  Arial, Helvetica, sans-serif;
     font-size: 2vw;
     position: absolute;
     margin-top: -40%;
     margin-left: 3%;
     width: 53%;
+}
+
+p#home{
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 40%;
 }
 
 img#brown-home{
@@ -204,23 +321,37 @@ img#dots-home{
 }
 
 img#cream-home{
-    margin-top: -4%;
-    margin-left: 47%;
-    width: 25%;
+    margin-top: 42%;
+    margin-left: 37%;
+    width: 28%;
     height: auto;
     position: absolute;
+    z-index: +1;
 }
 
 a#cta-home{
-    font-family: 'lemonmilk-bold';
+    font-family: 'lemonmilk-bold', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 2.2vw;
     color: var(--white);
     background-color: var(--darkgreen);
     padding: 1.5% 1.5% 1.5% 1.5%;
     border-radius: 2%;
     position: absolute;
-    margin-top: -11%;
+    margin-top: -14%;
     margin-left: 43%;
+}
+
+a#cta-home2{
+    font-family: 'lemonmilk-bold', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2.2vw;
+    color: var(--white);
+    background-color: var(--lightbrown);
+    padding: 1.5% 1.5% 1.5% 1.5%;
+    border-radius: 2%;
+    position: absolute;
+    margin-top: 32%;
+    margin-left: 40%;
+    z-index: +1;
 }
 
 img#green-home{
@@ -232,63 +363,11 @@ img#green-home{
     }
 
 
-/********************************************
-*********************************************
-*******************FOOTER********************
-*********************************************
-********************************************/
-/* footer{
-    position: absolute;
-    left: 0;
-    bottom: 0; 
-} */
-
-/* div#footer1{
-    background-color: var(--blue);
-    border-radius: 50%;
-    width: 25%;
-    height: auto;
-    padding: 25%;
-    z-index: -2;
-    position: relative;
-}
-
-div#footer2{
-    background-color: var(--lightblue);
-    border-radius: 50%;
-    width: 10%;
-    height: auto;
-    padding: 10%;
-    z-index: -1;
-    position: relative;
-}
-
-div#footer3{
-    background-color: var(--cream);
-    width: 15%;
-    height: auto;
-    padding: 15%;
-    border-radius: 2%;
-    position: relative;
-    left: 20%;
-}
-
-div#footer4{
-    background-color: var(--lightbrown);
-    width: 40%;
-    padding: 12%;
-    border-radius: 2%;
-    position: relative;
-    left: 60%;
-} */
 
 
-img#footah{
-    overflow: hidden;
-    margin-top: 6%;
-    width: 100%;
-    height: auto;
-}
+
+
+
 
 /********************************************
 *********************************************
@@ -310,20 +389,40 @@ div#overmij{
 
 }
 
+
 div#overmij2{
 	background-color: var(--blue);
     width: 65%;
     padding: 25%;
     border-radius: 2%;
-    margin-top: 8%;
-
+    margin-top: -3%;
+    position: absolute;
+    right: 0;
 }
 
-h2.overmij{
+h2#overmij{
     font-size: 3vw;
     position: absolute;
     margin-top: -45%;
-    margin-left: 18%;
+    margin-left: 17%;
+}
+
+p#overmij{
+    position: absolute;
+    margin-top: -37%;
+}
+
+h2#overmij2{
+    font-size: 3vw;
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 50%;
+}
+
+p#overmij2{
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 40%;
 }
 
 
@@ -333,4 +432,740 @@ span#paars{
 
 span#blauw{
     color: var(--darkblue);
+}
+
+span#zwart{
+    color: var(--black);
+}
+
+
+
+
+
+
+
+
+/********************************************
+*********************************************
+*****************MIJN WERK*******************
+*********************************************
+********************************************/
+
+/*****************
+********EEN*******
+*****************/
+div#mijn-werk1{
+    background-color: var(--darkgreen);
+    width: 60%;
+    padding: 15%;
+    border-radius: 2%;
+    margin-top: 8%;
+
+    position: absolute;
+    margin-top: 20%;
+}
+
+h2#mijn-werk1{
+
+}
+
+p#mijn-werk1{
+    font-size: 1.5vw;
+    color: black;
+    width: 20%;
+}
+
+
+/*****************
+*******TWEE*******
+*****************/
+
+div#mijn-werk2{
+    background-color: var(--lightgreen);
+    width: 75%;
+    padding: 25%;
+    border-radius: 2%;
+    margin-top: 8%;
+
+    position: absolute;
+    margin-top: 40%; 
+    margin-left: 10%;
+    z-index: -1;
+}
+
+h2#mijn-werk2{
+    position: absolute;
+    margin-top: 50%; 
+    margin-left: 35%;
+}
+
+p#mijn-werk2{
+    font-size: 1.5vw;
+    color: var(--white);
+    width: 30%;
+
+    position: absolute;
+    margin-top: 55%; 
+    margin-left: 45%;
+}
+
+img#mijn-werk2{
+    position: absolute;
+    width: 25%;
+    height: auto;
+    margin-top: 60%; 
+    margin-left: 15%;
+}
+
+/*****************
+*******DRIE*******
+*****************/
+
+div#mijn-werk3{
+    background-color: var(--blue);
+    width: 65%;
+    padding: 20%;
+    border-radius: 2%;
+    margin-top: 8%;
+
+    position: absolute;
+    margin-top: 82%; 
+}
+
+h2#mijn-werk3{
+    position: absolute;
+    margin-top: 87%; 
+    margin-left: 20%;
+    
+}
+
+p#mijn-werk3{
+    font-size: 1.5vw;
+    color: var(--white);
+    width: 30%;
+
+    position: absolute;
+    margin-top: 95%; 
+    margin-left: 30%;
+}
+
+img#mijn-werk3{
+    position: absolute;
+    width: 18%;
+    height: auto;
+    margin-top: 95%; 
+    margin-left: 5%;
+}
+
+/*****************
+*******VIER*******
+*****************/
+div#mijn-werk4{
+    background-color: var(--darkblue);
+    width: 75%;
+    padding: 20%;
+    border-radius: 2%;
+    margin-top: 8%;
+
+    position: absolute;
+    margin-top: 120%; 
+    right: 0;
+}
+
+h2#mijn-werk4{
+    position: absolute;
+    margin-top: 127%; 
+    margin-left: 30%;
+}
+
+p#mijn-werk4{
+    font-size: 1.5vw;
+    color: var(--white);
+    width: 20%;
+
+    position: absolute;
+    margin-top: 132%; 
+    margin-left: 30%;
+}
+
+img#mijn-werk4{
+    height: auto;
+    width: 14%;
+    position: absolute;
+    margin-top: 133%; 
+    margin-left: 60%;
+    z-index: +1;
+
+}
+
+img#mijn-werk4-2{
+    height: auto;
+    width: 15%;
+    position: absolute;
+    margin-top: 129%; 
+    margin-left: 73%;
+}
+
+/*****************
+*******VIJF*******
+*****************/
+div#mijn-werk5{
+    background-color: var(--purple);
+    width: 70%;
+    padding: 20%;
+    border-radius: 2%;
+    margin-top: 8%;
+
+    position: absolute;
+    margin-top: 155%; 
+}
+
+h2#mijn-werk5{
+    
+}
+
+p#mijn-werk5{
+    font-size: 1.5vw;
+    color: black;
+    width: 20%;
+}
+
+
+/*****************
+********ZES*******
+*****************/
+/* div#mijn-werk6{
+    background-color: var(--darkbrown);
+    width: 65%;
+    padding: 25%;
+    border-radius: 2%;
+    margin-top: 8%;
+
+    right: 0;
+    position: absolute;
+    margin-top: 190%; 
+}
+
+h2#mijn-werk6{
+    position: absolute;
+    margin-top: 193%;
+    margin-left: 40%;
+    
+}
+
+p#mijn-werk6{
+    font-size: 1.5vw;
+    color: var(--white);
+    width: 30%;
+
+    position: absolute;
+    margin-top: 210%; 
+    margin-left: 65%;
+
+} */
+
+/********************************************
+*********************************************
+****************ILLUSTRATIE******************
+*********************************************
+********************************************/
+h1#illustratie{
+    margin-left: -.1em;
+}
+
+p#illustratie-tekst{
+    font-size: 1.5vw;
+    width: 45%;
+    top: 25em;
+    left: 5%;
+    position: absolute;
+}
+
+img.illustratie{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+    right: 0;
+}
+
+div#illustratie-tekst{
+    background-color: var(--blue);
+    width: 65%;
+    padding: 15%;
+    border-radius: 4px;
+    margin-top: 20%;
+    position: absolute;
+}
+
+div#illustratie-body{
+    background-color: var(--darkblue);
+    width: 65%;
+    padding: 15%;
+    border-radius: 4px;
+
+    position: absolute;
+    margin-top: 45%;
+    right: 0;
+}
+
+
+
+/********************************************
+*********************************************
+******************SNAPCHAT*******************
+*********************************************
+********************************************/
+h2#snapchat{
+    margin-top: 55%;
+    margin-left: 55%;
+    position: absolute;
+    z-index: +1;
+}
+
+div#snapchat-label{
+    width: 57%;
+}
+
+h1#snapchat{
+    margin-left: -2.8em;
+}
+
+div#snapchat-body{
+    background-color: var(--blue);
+    width: 65%;
+    padding: 15%;
+    border-radius: 4px;
+
+    position: absolute;
+    margin-top: 45%;
+    right: 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 3em;
+}
+
+p#snapchat-tekst{
+    font-size: 1.5vw;
+    width: 45%;
+    top: 25em;
+    left: 5%;
+    position: absolute;
+}
+
+div#snapchat-tekst{
+    background-color: var(--darkblue);
+    width: 65%;
+    padding: 15%;
+    border-radius: 4px;
+    margin-top: 20%;
+    position: absolute;
+}
+
+img.snapchat{ 
+    width: 99%;
+    height: auto;
+    margin-top: 20%;
+}
+/********************************************
+*********************************************
+*******************LYRICS********************
+*********************************************
+********************************************/
+div#lyric-label{
+    background-color: var(--lightgreen);
+}
+
+div#lyric-circel{
+    background-color: var(--darkgreen);
+    z-index: -4;
+}
+
+h1#lyric-h1{
+    margin-left: -.1em;
+}
+
+div#lyric1{
+    background-color: var(--lightgreen);
+    width: 65%;
+    padding: 15%;
+    border-radius: 4px;
+
+    position: absolute;
+    margin-top: 20%;
+    right: 0;
+    z-index: -3;
+}
+
+div#lyric2{
+    background-color: var(--darkgreen);
+    width: 65%;
+    padding: 25%;
+    border-radius: 4px;
+
+    position: absolute;
+    margin-top: 40%;
+    z-index: -2;
+}
+
+div#lyric3{
+    background-color: var(--lightgreen);
+    width: 75%;
+    padding: 15%;
+    padding-bottom: 135%;
+    border-radius: 4px;
+
+    position: absolute;
+    margin-top: 80%;
+    right: 0;
+    z-index: -1;
+}
+
+div#lyric4{
+    background-color: var(--darkgreen);
+    width: 65%;
+    padding: 25%;
+    border-radius: 4px;
+
+    position: absolute;
+    margin-top: 90%;
+    z-index: -4;
+}
+
+
+
+li{
+    font-family: 'lemonmilk-regular', Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+    color: var(--white);
+}
+
+
+h2#onderzoek{
+    margin-top: 85%;
+    right: 3%;
+    position: absolute;
+
+}
+
+img#wallows{
+    margin-top: 90%;
+    margin-left: 30%;
+    width: 20%;
+    z-index: +2;
+}
+
+p#onderzoek{
+    width: 45%;
+    position: absolute;
+    right: 3%;
+    margin-top: -20%;
+    font-size: 1.2vw;
+}
+
+p#onderzoek2{
+    width: 45%;
+    position: absolute;
+    right: 3%;
+    margin-top: -10%;
+    font-size: 1.2vw;
+}
+
+p#onderzoek3{
+    width: 45%;
+    position: absolute;
+    right: 3%;
+    margin-top: -5%;
+    font-size: 1.2vw;
+}
+
+h2#visueel{
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 50%;
+}
+
+p#visueel{
+    font-size: 1.2vw;
+    margin-top: 15%;
+    width: 60%;
+    margin-left: 30%;
+}
+
+h3#onzeker{
+    position: absolute;
+    margin-left: 35%;
+    margin-top: 3%;
+}
+
+h3#verbonden{
+    position: absolute;
+    right: 10%;
+    margin-top: 3%;
+}
+
+img#onzeker{
+    width: 23%;
+    position: absolute;
+    margin-left: 30%;
+    margin-top: 6%;
+
+}
+
+img#verbonden{
+    width: 20%;
+    position: absolute;
+    right: 6%;
+    margin-top: 6%;
+}
+
+p#analyse{
+    width: 60%;
+    margin-top: 35%;
+    position: absolute;
+    margin-left: 30%;
+    font-size: 1.2vw;
+}
+
+p#een{
+    width: 60%;
+    margin-top: 42%;
+    position: absolute;
+    margin-left: 30%;
+    font-size: 1.2vw;
+}
+
+p#twee{
+    width: 60%;
+    margin-top: 46%;
+    position: absolute;
+    margin-left: 30%;
+    font-size: 1.2vw;
+}
+
+p#drie{
+    width: 60%;
+    margin-top: 49%;
+    position: absolute;
+    margin-left: 30%;
+    font-size: 1.2vw;
+}
+
+p#vier{
+    width: 60%;
+    margin-top: 53%;
+    position: absolute;
+    margin-left: 30%;
+    font-size: 1.2vw;
+}
+
+p#einde{
+    width: 60%;
+    margin-top: 80%;
+    position: absolute;
+    margin-left: 30%;
+    font-size: 1.2vw;
+}
+
+img#lyric1{
+    width: 20%;
+    position: absolute;
+    margin-left: 35%;
+    margin-top: 67%;
+}
+
+img#lyric2{
+    width: 18%;
+    position: absolute;
+    margin-top: 60%;
+    right: 15%;
+    
+
+}
+
+h2#einde{
+    position: absolute;
+    margin-top: 110%;
+    margin-left: 5%;
+    position: absolute;
+}
+
+iframe{
+    position: absolute;
+    margin-top: 120%;
+    margin-left: 5%;
+    width: 25%;
+    height: 50%;
+}
+/********************************************
+*********************************************
+****************SIDEMEN**********************
+*********************************************
+********************************************/
+
+
+div#sidemen-label{
+    background-color: var(--darkbrown);
+    width: 57%;
+}
+
+div#sidemen-circel{
+    background-color: var(--lightbrown);
+}
+
+h1#sidemen{
+    margin-left: -2.7em;
+}
+
+div#sidemen1{
+    background-color: var(--darkbrown);
+    width: 65%;
+    padding: 15%;
+    border-radius: 4px;
+
+    position: absolute;
+    margin-top: 20%;
+    right: 0;
+}
+
+h2#sidemen{
+    position: absolute;
+    margin-left: 40%;
+    margin-top: 25%;
+    }
+    
+p#sidemen{
+    position: absolute; 
+    margin-left: 40%;
+    margin-top: 30%; 
+}
+
+h2#sidemen1{
+    position: absolute;
+    margin-left: 90%;
+    margin-top: 25%;
+    }
+    
+p#sidemen1{
+    position: absolute; 
+    margin-left: 85%;
+    margin-top: 30%; 
+}
+
+div#sidemen2{
+    background-color: var(--lightbrown);
+    width: 65%;
+    padding: 25%;
+    border-radius: 4px;
+
+    position: absolute;
+    margin-top: 40%;
+}
+
+h2#sidemen2{
+    width: 60%;
+    position: absolute;
+    margin-left: 2%;
+    margin-top: 45%;
+    }
+    
+p#sidemen2{
+    width: 60%;
+    position: absolute; 
+    margin-left: 2%;
+    margin-top: 50%; 
+}
+
+
+div#sidemen3{
+    background-color: var(--darkbrown);
+    width: 75%;
+    padding: 25%;
+    border-radius: 4px;
+
+    position: absolute;
+    margin-top: 80%;
+    right: 0;
+}
+
+h2#sidemen3{
+width: 60%;
+position: absolute;
+margin-left: 30%;
+margin-top: 87%;
+}
+
+p#sidemen3{
+width: 60%;
+position: absolute; 
+margin-left: 30%;
+margin-top: 97%; 
+}
+
+a.sidemen{
+    color: var(--white);
+    text-decoration: underline;
+    position: absolute; 
+    margin-left: 30%;
+    margin-top: 107%; 
+}
+
+a#sidemen{
+    margin-top: 110%; 
+}
+
+a.sidemen:hover{
+    color: var(--lightbrown);
+    text-decoration: underline;
+}
+
+
+/********************************************
+*********************************************
+*******************FOOTER********************
+*********************************************
+********************************************/
+
+img#footer-home{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    margin-top: 51%;
+}
+
+img#footer-over-mij{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    margin-top: 60%;
+}
+
+img#footer-mijn-werk{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    margin-top: 200%;
+}
+
+img#footer-illustratie{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    margin-top: 400%;
+}
+
+img#footer-snap{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    margin-top: 180%;
+}
+
+img#footer-sidemen{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    margin-top: 140%;
 }
